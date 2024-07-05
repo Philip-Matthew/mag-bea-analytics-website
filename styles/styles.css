@@ -3,6 +3,7 @@
     --secondary_color: black;
 }
 
+
 #navbar-section {
     background-color: var(--secondary_color);
 }
@@ -11,7 +12,9 @@
     background-color: var(--secondary_color);
 }
 
-
+#slider-section {
+    background-color: var(--secondary_color);
+}
 
 
 /* Media Queries - Responsiveness for mobile screens */
