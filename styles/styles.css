@@ -16,6 +16,10 @@
     background-color: var(--secondary_color);
 }
 
+#faq-section {
+    background-color: var(--secondary_color);
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Media Queries - Responsiveness for mobile screens */
 @media (min-width: 576px) {
@@ -24,3 +28,84 @@
         margin-right: auto;
     }
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+/* FAQ Section Styles */
+#FAQs {
+    background-color: black;
+    height: 100%;
+    background-size: cover;
+    color: rgb(243, 239, 239);
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.faq-title {
+    font-size: 2rem;
+    margin: 2rem 0rem;
+}
+
+.faq {
+    max-width: 80%;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 1.8rem;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* --------------------------------------------------------------------------------------------------------------------------------- */
